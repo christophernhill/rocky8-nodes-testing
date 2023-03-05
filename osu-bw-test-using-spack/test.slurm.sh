@@ -7,6 +7,8 @@
 #SBATCH --nodelist=node2101,node2103
 #SBATCH --exclusive
 #### salloc -p sched_mit_r8_testing  --ntasks-per-node=1 --gres=gpu:4 -t 12:00:00 --nodelist=node2101,node2103 --mem=0 -N 2 --exclusive
+#### submit with
+#### sbatch < test.slurm.sh
 
 # For debugging
 # set -v
