@@ -27,4 +27,8 @@ The contents of this directory are as follows
 
 2. `sample-output-for-build-from-clean.txt`
 
+    * Example of output from Slurm run of `test.slurm.sh` for the first time with a specific `WDIR` setting.
+
 3. `sample-output-for-already-installed.txt`
+
+    * Example of output from Slurm run of `test.slurm.sh` for subsequent times with a specific `WDIR` setting.
