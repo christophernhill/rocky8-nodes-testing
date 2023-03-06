@@ -23,3 +23,8 @@ The contents of this directory are as follows
         - generates and LMOD Modules directory for the built software
         - loads modules for mvapich and the OSU MPI micro benchmarks
         - runs the OSU benchmarks `osu_bw`, `osu_latency`, `osu_bibw` between two nodes
+
+
+`sample`
+
+`sample`
