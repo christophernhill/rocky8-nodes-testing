@@ -27,4 +27,4 @@ The contents of this directory are as follows
 
 2. `sample-output-for-build-from-clean.txt`
 
-3. `sample`
+3. `sample-output-for-already-installed.txt`
