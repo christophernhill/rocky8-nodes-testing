@@ -1,4 +1,4 @@
-# Spack based Slurm script to install and run compiler, MPI and OSU Micro Benchmarks
+# Slurm script using Spack to install, build and run compiler, MPI and OSU micro benchmarks
 
 The contents of this directory are as follows
 
