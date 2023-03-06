@@ -1,0 +1,1276 @@
+[cnh@eofe4 rocky8-spack]$ cat slurm-47168265.out
+Cloning into 'spack'...
+Updating files: 100% (10282/10282), done.
+==> Added 1 new compiler to /home/cnh/.spack/linux/compilers.yaml
+    gcc@8.5.0
+==> Compilers are defined in the following files:
+    /home/cnh/.spack/linux/compilers.yaml
+compilers:
+- compiler:
+    spec: gcc@8.5.0
+    paths:
+      cc: /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: null
+      fc: null
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.4/build_cache/linux-centos7-x86_64-gcc-10.2.1-patchelf-0.16.1-p72zyan5wrzuabtmzq7isa5mzyh6ahdp.spec.json
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.4/build_cache/linux-centos7-x86_64/gcc-10.2.1/patchelf-0.16.1/linux-centos7-x86_64-gcc-10.2.1-patchelf-0.16.1-p72zyan5wrzuabtmzq7isa5mzyh6ahdp.spack
+==> Installing "patchelf@0.16.1%gcc@10.2.1 ldflags="-static-libstdc++ -static-libgcc"  build_system=autotools arch=linux-centos7-x86_64" from a buildcache
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.4/build_cache/linux-centos7-x86_64-gcc-10.2.1-clingo-bootstrap-spack-prqkzynv2nwko5mktitebgkeumuxkveu.spec.json
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.4/build_cache/linux-centos7-x86_64/gcc-10.2.1/clingo-bootstrap-spack/linux-centos7-x86_64-gcc-10.2.1-clingo-bootstrap-spack-prqkzynv2nwko5mktitebgkeumuxkveu.spack
+==> Installing "clingo-bootstrap@spack%gcc@10.2.1~docs~ipo+python+static_libstdcpp build_type=Release arch=linux-centos7-x86_64" from a buildcache
+==> Installing libiconv-1.17-cv75ifvkycbnsgxm4jd2u4e44oc53qcy
+==> No binary for libiconv-1.17-cv75ifvkycbnsgxm4jd2u4e44oc53qcy found: installing from source
+==> Fetching https://ftpmirror.gnu.org/libiconv/libiconv-1.17.tar.gz
+==> No patches needed for libiconv
+==> libiconv: Executing phase: 'autoreconf'
+==> libiconv: Executing phase: 'configure'
+==> libiconv: Executing phase: 'build'
+==> libiconv: Executing phase: 'install'
+==> libiconv: Successfully installed libiconv-1.17-cv75ifvkycbnsgxm4jd2u4e44oc53qcy
+  Stage: 1.96s.  Autoreconf: 0.00s.  Configure: 11.02s.  Build: 6.99s.  Install: 3.44s.  Total: 23.78s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/libiconv-1.17-cv75ifvkycbnsgxm4jd2u4e44oc53qcy
+==> Installing libsigsegv-2.13-xksw3l5vf4blvy66x4q4nbno6d5736je
+==> No binary for libsigsegv-2.13-xksw3l5vf4blvy66x4q4nbno6d5736je found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/be/be78ee4176b05f7c75ff03298d84874db90f4b6c9d5503f0da1226b3a3c48119.tar.gz
+==> No patches needed for libsigsegv
+==> libsigsegv: Executing phase: 'autoreconf'
+==> libsigsegv: Executing phase: 'configure'
+==> libsigsegv: Executing phase: 'build'
+==> libsigsegv: Executing phase: 'install'
+==> libsigsegv: Successfully installed libsigsegv-2.13-xksw3l5vf4blvy66x4q4nbno6d5736je
+  Stage: 0.33s.  Autoreconf: 0.00s.  Configure: 3.70s.  Build: 0.53s.  Install: 0.43s.  Total: 5.35s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/libsigsegv-2.13-xksw3l5vf4blvy66x4q4nbno6d5736je
+==> Installing berkeley-db-18.1.40-lzfh6ekrivojkee5k7etkvlidruz4qbn
+==> No binary for berkeley-db-18.1.40-lzfh6ekrivojkee5k7etkvlidruz4qbn found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0c/0cecb2ef0c67b166de93732769abdeba0555086d51de1090df325e18ee8da9c8.tar.gz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/berkeley-db/drop-docs.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/berkeley-db/tls.patch
+==> Ran patch() for berkeley-db
+==> berkeley-db: Executing phase: 'autoreconf'
+==> berkeley-db: Executing phase: 'configure'
+==> berkeley-db: Executing phase: 'build'
+==> berkeley-db: Executing phase: 'install'
+==> berkeley-db: Successfully installed berkeley-db-18.1.40-lzfh6ekrivojkee5k7etkvlidruz4qbn
+  Stage: 1.41s.  Autoreconf: 0.00s.  Configure: 10.01s.  Build: 4.82s.  Install: 1.17s.  Total: 17.77s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/berkeley-db-18.1.40-lzfh6ekrivojkee5k7etkvlidruz4qbn
+==> Installing pkgconf-1.8.0-m7qknuvbuwzff6elhjs2tqtd7tftwvbh
+==> No binary for pkgconf-1.8.0-m7qknuvbuwzff6elhjs2tqtd7tftwvbh found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ef/ef9c7e61822b7cb8356e6e9e1dca58d9556f3200d78acab35e4347e9d4c2bbaf.tar.xz
+==> No patches needed for pkgconf
+==> pkgconf: Executing phase: 'autoreconf'
+==> pkgconf: Executing phase: 'configure'
+==> pkgconf: Executing phase: 'build'
+==> pkgconf: Executing phase: 'install'
+==> pkgconf: Successfully installed pkgconf-1.8.0-m7qknuvbuwzff6elhjs2tqtd7tftwvbh
+  Stage: 0.33s.  Autoreconf: 0.00s.  Configure: 2.57s.  Build: 1.13s.  Install: 0.45s.  Total: 4.82s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/pkgconf-1.8.0-m7qknuvbuwzff6elhjs2tqtd7tftwvbh
+==> Installing zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow
+==> No binary for zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/b3/b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30.tar.gz
+==> No patches needed for zlib
+==> zlib: Executing phase: 'edit'
+==> zlib: Executing phase: 'build'
+==> zlib: Executing phase: 'install'
+==> zlib: Successfully installed zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow
+  Stage: 0.40s.  Edit: 0.43s.  Build: 0.48s.  Install: 0.29s.  Total: 1.87s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow
+==> Installing autoconf-archive-2022.02.11-xq6hldek7g7ic56yfuujii3z2u3pu4md
+==> No binary for autoconf-archive-2022.02.11-xq6hldek7g7ic56yfuujii3z2u3pu4md found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/78/78a61b611e2eeb55a89e0398e0ce387bcaf57fe2dd53c6fe427130f777ad1e8c.tar.xz
+==> Fetching https://mirror.spack.io/_source-cache/archive/13/139214f5104f699f868dc87a14378e1e694a3c2539efa0de6f878024f3d7c66d
+==> Applied patch https://github.com/autoconf-archive/autoconf-archive/commit/510672bc200e869fb0ad4634407561be819cf093.patch?full_index=1
+==> autoconf-archive: Executing phase: 'autoreconf'
+==> autoconf-archive: Executing phase: 'configure'
+==> autoconf-archive: Executing phase: 'build'
+==> autoconf-archive: Executing phase: 'install'
+==> autoconf-archive: Successfully installed autoconf-archive-2022.02.11-xq6hldek7g7ic56yfuujii3z2u3pu4md
+  Stage: 0.62s.  Autoreconf: 0.00s.  Configure: 1.31s.  Build: 0.07s.  Install: 6.92s.  Total: 9.26s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/autoconf-archive-2022.02.11-xq6hldek7g7ic56yfuujii3z2u3pu4md
+==> Installing xz-5.4.1-qpchudrk366twnatrljzpln33wxcsrwp
+==> No binary for xz-5.4.1-qpchudrk366twnatrljzpln33wxcsrwp found: installing from source
+==> Fetching https://prdownloads.sourceforge.net/lzmautils/files/xz-5.4.1.tar.bz2
+==> No patches needed for xz
+==> xz: Executing phase: 'autoreconf'
+==> xz: Executing phase: 'configure'
+==> xz: Executing phase: 'build'
+==> xz: Executing phase: 'install'
+==> xz: Successfully installed xz-5.4.1-qpchudrk366twnatrljzpln33wxcsrwp
+  Stage: 7.93s.  Autoreconf: 0.00s.  Configure: 5.87s.  Build: 2.67s.  Install: 4.14s.  Total: 20.96s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/xz-5.4.1-qpchudrk366twnatrljzpln33wxcsrwp
+==> Installing zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42
+==> No binary for zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f7/f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e.tar.gz
+==> No patches needed for zstd
+==> zstd: Executing phase: 'edit'
+==> zstd: Executing phase: 'build'
+==> zstd: Executing phase: 'install'
+==> zstd: Successfully installed zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42
+  Stage: 0.43s.  Edit: 0.00s.  Build: 0.00s.  Install: 9.55s.  Total: 10.18s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42
+==> Installing diffutils-3.8-vfnc6ig4omcu6cy4cv3v5qwgcrsvifp3
+==> No binary for diffutils-3.8-vfnc6ig4omcu6cy4cv3v5qwgcrsvifp3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a6/a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec.tar.xz
+==> No patches needed for diffutils
+==> diffutils: Executing phase: 'autoreconf'
+==> diffutils: Executing phase: 'configure'
+==> diffutils: Executing phase: 'build'
+==> diffutils: Executing phase: 'install'
+==> diffutils: Successfully installed diffutils-3.8-vfnc6ig4omcu6cy4cv3v5qwgcrsvifp3
+  Stage: 0.50s.  Autoreconf: 0.00s.  Configure: 20.40s.  Build: 2.54s.  Install: 1.91s.  Total: 25.71s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/diffutils-3.8-vfnc6ig4omcu6cy4cv3v5qwgcrsvifp3
+==> Installing ncurses-6.4-idtlmtdcr65f5lkvezp7nqnu7kdpy4zm
+==> No binary for ncurses-6.4-idtlmtdcr65f5lkvezp7nqnu7kdpy4zm found: installing from source
+==> Fetching https://ftpmirror.gnu.org/ncurses/ncurses-6.4.tar.gz
+==> No patches needed for ncurses
+==> ncurses: Executing phase: 'autoreconf'
+==> ncurses: Executing phase: 'configure'
+==> ncurses: Executing phase: 'build'
+==> ncurses: Executing phase: 'install'
+==> ncurses: Successfully installed ncurses-6.4-idtlmtdcr65f5lkvezp7nqnu7kdpy4zm
+  Stage: 1.89s.  Autoreconf: 0.00s.  Configure: 24.24s.  Build: 12.39s.  Install: 11.49s.  Total: 50.27s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/ncurses-6.4-idtlmtdcr65f5lkvezp7nqnu7kdpy4zm
+==> Installing pigz-2.7-zybzi4oy6kir6lsqyw55ofgt54lfjwbe
+==> No binary for pigz-2.7-zybzi4oy6kir6lsqyw55ofgt54lfjwbe found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d2/d2045087dae5e9482158f1f1c0f21c7d3de6f7cdc7cc5848bdabda544e69aa58.tar.gz
+==> No patches needed for pigz
+==> pigz: Executing phase: 'edit'
+==> pigz: Executing phase: 'build'
+==> pigz: Executing phase: 'install'
+==> pigz: Successfully installed pigz-2.7-zybzi4oy6kir6lsqyw55ofgt54lfjwbe
+  Stage: 0.26s.  Edit: 0.00s.  Build: 1.21s.  Install: 0.03s.  Total: 1.68s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/pigz-2.7-zybzi4oy6kir6lsqyw55ofgt54lfjwbe
+==> Installing libxml2-2.10.3-j5obwliom2fmti7b6dk2jvt245wsrrot
+==> No binary for libxml2-2.10.3-j5obwliom2fmti7b6dk2jvt245wsrrot found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5d/5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c.tar.xz
+==> Fetching https://mirror.spack.io/_source-cache/archive/96/96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7.tar.gz
+==> Moving resource stage
+	source: /tmp/cnh/spack-stage/resource-xmlts-j5obwliom2fmti7b6dk2jvt245wsrrot/spack-src/
+	destination: /tmp/cnh/spack-stage/spack-stage-libxml2-2.10.3-j5obwliom2fmti7b6dk2jvt245wsrrot/spack-src/xmlconf
+==> Ran patch() for libxml2
+==> libxml2: Executing phase: 'autoreconf'
+==> libxml2: Executing phase: 'configure'
+==> libxml2: Executing phase: 'build'
+==> libxml2: Executing phase: 'install'
+==> libxml2: Successfully installed libxml2-2.10.3-j5obwliom2fmti7b6dk2jvt245wsrrot
+  Stage: 1.35s.  Autoreconf: 0.00s.  Configure: 4.11s.  Build: 4.50s.  Install: 1.10s.  Total: 11.39s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/libxml2-2.10.3-j5obwliom2fmti7b6dk2jvt245wsrrot
+==> Installing m4-1.4.19-6ccqtdbap356tbtxqd4nq24mgiu3jdqa
+==> No binary for m4-1.4.19-6ccqtdbap356tbtxqd4nq24mgiu3jdqa found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3b/3be4a26d825ffdfda52a56fc43246456989a3630093cced3fbddf4771ee58a70.tar.gz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/m4/checks-198.sysval.1.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/m4/checks-198.sysval.2.patch
+==> Ran patch() for m4
+==> m4: Executing phase: 'autoreconf'
+==> m4: Executing phase: 'configure'
+==> m4: Executing phase: 'build'
+==> m4: Executing phase: 'install'
+==> m4: Successfully installed m4-1.4.19-6ccqtdbap356tbtxqd4nq24mgiu3jdqa
+  Stage: 0.60s.  Autoreconf: 0.00s.  Configure: 23.32s.  Build: 3.02s.  Install: 2.07s.  Total: 29.71s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/m4-1.4.19-6ccqtdbap356tbtxqd4nq24mgiu3jdqa
+==> Installing bzip2-1.0.8-qee4pq3dcxsobpftfsy64mou45eh63y4
+==> No binary for bzip2-1.0.8-qee4pq3dcxsobpftfsy64mou45eh63y4 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ab/ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269.tar.gz
+==> Ran patch() for bzip2
+==> bzip2: Executing phase: 'install'
+==> bzip2: Successfully installed bzip2-1.0.8-qee4pq3dcxsobpftfsy64mou45eh63y4
+  Stage: 0.38s.  Install: 1.93s.  Total: 2.55s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/bzip2-1.0.8-qee4pq3dcxsobpftfsy64mou45eh63y4
+==> Installing readline-8.2-jrjkg7sz323vmquq56fkgw2qdykh2hky
+==> No binary for readline-8.2-jrjkg7sz323vmquq56fkgw2qdykh2hky found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3f/3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/bb/bbf97f1ec40a929edab5aa81998c1e2ef435436c597754916e6a5868f273aff7
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-001
+==> Ran patch() for readline
+==> readline: Executing phase: 'autoreconf'
+==> readline: Executing phase: 'configure'
+==> readline: Executing phase: 'build'
+==> readline: Executing phase: 'install'
+==> readline: Successfully installed readline-8.2-jrjkg7sz323vmquq56fkgw2qdykh2hky
+  Stage: 0.66s.  Autoreconf: 0.00s.  Configure: 4.62s.  Build: 1.00s.  Install: 0.71s.  Total: 7.46s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/readline-8.2-jrjkg7sz323vmquq56fkgw2qdykh2hky
+==> Installing libtool-2.4.7-klvagfntnwcskqu7vqnnir3fsaopgnez
+==> No binary for libtool-2.4.7-klvagfntnwcskqu7vqnnir3fsaopgnez found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/04/04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8.tar.gz
+==> Ran patch() for libtool
+==> libtool: Executing phase: 'autoreconf'
+==> libtool: Executing phase: 'configure'
+==> libtool: Executing phase: 'build'
+==> libtool: Executing phase: 'install'
+==> libtool: Successfully installed libtool-2.4.7-klvagfntnwcskqu7vqnnir3fsaopgnez
+  Stage: 0.45s.  Autoreconf: 0.00s.  Configure: 5.10s.  Build: 1.03s.  Install: 1.16s.  Total: 8.43s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/libtool-2.4.7-klvagfntnwcskqu7vqnnir3fsaopgnez
+==> Installing tar-1.34-5pqthtjwzag7imjj7e5yc5oluvmkapdo
+==> No binary for tar-1.34-5pqthtjwzag7imjj7e5yc5oluvmkapdo found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/03/03d908cf5768cfe6b7ad588c921c6ed21acabfb2b79b788d1330453507647aed.tar.gz
+==> No patches needed for tar
+==> tar: Executing phase: 'autoreconf'
+==> tar: Executing phase: 'configure'
+==> tar: Executing phase: 'build'
+==> tar: Executing phase: 'install'
+==> tar: Successfully installed tar-1.34-5pqthtjwzag7imjj7e5yc5oluvmkapdo
+  Stage: 0.52s.  Autoreconf: 0.00s.  Configure: 23.99s.  Build: 3.44s.  Install: 1.89s.  Total: 30.41s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/tar-1.34-5pqthtjwzag7imjj7e5yc5oluvmkapdo
+==> Installing gdbm-1.23-u6bdgspz6jpcvel2mrud7enh2scuxlis
+==> No binary for gdbm-1.23-u6bdgspz6jpcvel2mrud7enh2scuxlis found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/74/74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd.tar.gz
+==> No patches needed for gdbm
+==> gdbm: Executing phase: 'autoreconf'
+==> gdbm: Executing phase: 'configure'
+==> gdbm: Executing phase: 'build'
+==> gdbm: Executing phase: 'install'
+==> gdbm: Successfully installed gdbm-1.23-u6bdgspz6jpcvel2mrud7enh2scuxlis
+  Stage: 0.39s.  Autoreconf: 0.00s.  Configure: 4.12s.  Build: 1.61s.  Install: 1.65s.  Total: 8.33s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gdbm-1.23-u6bdgspz6jpcvel2mrud7enh2scuxlis
+==> Installing gettext-0.21.1-n5xqqjmk4outcsuw2iczr2fcj2znsree
+==> No binary for gettext-0.21.1-n5xqqjmk4outcsuw2iczr2fcj2znsree found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/50/50dbc8f39797950aa2c98e939947c527e5ac9ebd2c1b99dd7b06ba33a6767ae6.tar.xz
+==> No patches needed for gettext
+==> gettext: Executing phase: 'autoreconf'
+==> gettext: Executing phase: 'configure'
+==> gettext: Executing phase: 'build'
+==> gettext: Executing phase: 'install'
+==> gettext: Successfully installed gettext-0.21.1-n5xqqjmk4outcsuw2iczr2fcj2znsree
+  Stage: 1.05s.  Autoreconf: 0.00s.  Configure: 1m 9.64s.  Build: 1m 17.80s.  Install: 1m 23.44s.  Total: 3m 53.25s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gettext-0.21.1-n5xqqjmk4outcsuw2iczr2fcj2znsree
+==> Installing perl-5.36.0-ahvbouojjsnthuz3qko4rdmm5l2betyl
+==> No binary for perl-5.36.0-ahvbouojjsnthuz3qko4rdmm5l2betyl found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e2/e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/9d/9da50e155df72bce55cb69f51f1dbb4b62d23740fb99f6178bb27f22ebdf8a46.tar.gz
+==> Moving resource stage
+	source: /tmp/cnh/spack-stage/resource-cpanm-ahvbouojjsnthuz3qko4rdmm5l2betyl/spack-src/
+	destination: /tmp/cnh/spack-stage/spack-stage-perl-5.36.0-ahvbouojjsnthuz3qko4rdmm5l2betyl/spack-src/cpanm/cpanm
+==> Ran patch() for perl
+==> perl: Executing phase: 'configure'
+==> perl: Executing phase: 'build'
+==> perl: Executing phase: 'install'
+==> perl: Successfully installed perl-5.36.0-ahvbouojjsnthuz3qko4rdmm5l2betyl
+  Stage: 1.49s.  Configure: 48.57s.  Build: 25.97s.  Install: 30.25s.  Total: 1m 47.29s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-5.36.0-ahvbouojjsnthuz3qko4rdmm5l2betyl
+==> Installing autoconf-2.69-fkf755w7w7xcwommwpd76jxc4r74xaje
+==> No binary for autoconf-2.69-fkf755w7w7xcwommwpd76jxc4r74xaje found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/95/954bd69b391edc12d6a4a51a2dd1476543da5c6bbf05a95b59dc0dd6fd4c2969.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/77/7793209b33013dc0f81208718c68440c5aae80e7a1c4b8d336e382525af791a7
+==> Fetching https://mirror.spack.io/_source-cache/archive/35/35c449281546376449766f92d49fc121ca50e330e60fefcfc9be2af3253082c2
+==> Fetching https://mirror.spack.io/_source-cache/archive/a4/a49dd5bac3b62daa0ff688ab4d508d71dbd2f4f8d7e2a02321926346161bf3ee
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-fix-libtool-test.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26-2.patch
+==> Ran patch() for autoconf
+==> autoconf: Executing phase: 'autoreconf'
+==> autoconf: Executing phase: 'configure'
+==> autoconf: Executing phase: 'build'
+==> autoconf: Executing phase: 'install'
+==> autoconf: Successfully installed autoconf-2.69-fkf755w7w7xcwommwpd76jxc4r74xaje
+  Stage: 1.26s.  Autoreconf: 0.00s.  Configure: 1.43s.  Build: 0.82s.  Install: 0.47s.  Total: 4.39s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/autoconf-2.69-fkf755w7w7xcwommwpd76jxc4r74xaje
+==> Installing texinfo-7.0-lzovt6c4n24snhslunwxwvu3pvcjfolp
+==> No binary for texinfo-7.0-lzovt6c4n24snhslunwxwvu3pvcjfolp found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/92/9261d4ee11cdf6b61895e213ffcd6b746a61a64fe38b9741a3aaa73125b35170.tar.gz
+==> No patches needed for texinfo
+==> texinfo: Executing phase: 'autoreconf'
+==> texinfo: Executing phase: 'configure'
+==> texinfo: Executing phase: 'build'
+==> texinfo: Executing phase: 'install'
+==> texinfo: Successfully installed texinfo-7.0-lzovt6c4n24snhslunwxwvu3pvcjfolp
+  Stage: 0.71s.  Autoreconf: 0.00s.  Configure: 18.35s.  Build: 3.33s.  Install: 1.87s.  Total: 24.66s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/texinfo-7.0-lzovt6c4n24snhslunwxwvu3pvcjfolp
+==> Installing automake-1.16.5-heznjmknc3w65vctguse44imergwbmnj
+==> No binary for automake-1.16.5-heznjmknc3w65vctguse44imergwbmnj found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/07/07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605.tar.gz
+==> Ran patch() for automake
+==> automake: Executing phase: 'autoreconf'
+==> automake: Executing phase: 'configure'
+==> automake: Executing phase: 'build'
+==> automake: Executing phase: 'install'
+==> automake: Successfully installed automake-1.16.5-heznjmknc3w65vctguse44imergwbmnj
+  Stage: 0.59s.  Autoreconf: 0.00s.  Configure: 1.52s.  Build: 0.40s.  Install: 0.32s.  Total: 3.38s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/automake-1.16.5-heznjmknc3w65vctguse44imergwbmnj
+==> Installing gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272
+==> No binary for gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ea/eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c.tar.bz2
+==> No patches needed for gmp
+==> gmp: Executing phase: 'autoreconf'
+==> gmp: Executing phase: 'configure'
+==> gmp: Executing phase: 'build'
+==> gmp: Executing phase: 'install'
+==> gmp: Successfully installed gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272
+  Stage: 0.61s.  Autoreconf: 6.11s.  Configure: 12.25s.  Build: 8.24s.  Install: 0.67s.  Total: 28.79s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272
+==> Installing mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755
+==> No binary for mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755 found: installing from source
+==> Fetching https://ftpmirror.gnu.org/mpfr/mpfr-4.2.0.tar.bz2
+==> No patches needed for mpfr
+==> mpfr: Executing phase: 'autoreconf'
+==> mpfr: Executing phase: 'configure'
+==> mpfr: Executing phase: 'build'
+==> mpfr: Executing phase: 'install'
+==> mpfr: Successfully installed mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755
+  Stage: 2.49s.  Autoreconf: 13.66s.  Configure: 6.60s.  Build: 7.28s.  Install: 0.84s.  Total: 32.59s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755
+==> Installing mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2
+==> No binary for mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/17/17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459.tar.gz
+==> No patches needed for mpc
+==> mpc: Executing phase: 'autoreconf'
+==> mpc: Executing phase: 'configure'
+==> mpc: Executing phase: 'build'
+==> mpc: Executing phase: 'install'
+==> mpc: Successfully installed mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2
+  Stage: 0.24s.  Autoreconf: 0.00s.  Configure: 3.62s.  Build: 1.22s.  Install: 0.43s.  Total: 7.19s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2
+==> Installing gawk-5.1.1-vxbkykp274qdnzkydbt4gkh7wgk2s26j
+==> No binary for gawk-5.1.1-vxbkykp274qdnzkydbt4gkh7wgk2s26j found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d8/d87629386e894bbea11a5e00515fc909dc9b7249529dad9e6a3a2c77085f7ea2.tar.xz
+==> No patches needed for gawk
+==> gawk: Executing phase: 'autoreconf'
+==> gawk: Executing phase: 'configure'
+==> gawk: Executing phase: 'build'
+==> gawk: Executing phase: 'install'
+==> gawk: Successfully installed gawk-5.1.1-vxbkykp274qdnzkydbt4gkh7wgk2s26j
+  Stage: 0.50s.  Autoreconf: 0.00s.  Configure: 10.06s.  Build: 3.66s.  Install: 1.73s.  Total: 17.60s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gawk-5.1.1-vxbkykp274qdnzkydbt4gkh7wgk2s26j
+==> Installing gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk
+==> No binary for gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e5/e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff.tar.xz
+==> Ran patch() for gcc
+==> gcc: Executing phase: 'autoreconf'
+==> gcc: Executing phase: 'configure'
+==> gcc: Executing phase: 'build'
+==> gcc: Executing phase: 'install'
+==> gcc: Successfully installed gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk
+  Stage: 7.43s.  Autoreconf: 0.00s.  Configure: 2.61s.  Build: 14m 2.11s.  Install: 19.12s.  Total: 14m 33.78s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk
+==> Regenerating lmod module files
+/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/bin/gcc
+Reading specs from /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/lib/gcc/x86_64-pc-linux-gnu/12.2.0/specs
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/libexec/gcc/x86_64-pc-linux-gnu/12.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/cnh/spack-stage/spack-stage-gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/spack-src/configure --prefix=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42/include --with-zstd-lib=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42/lib --enable-bootstrap --with-mpfr-include=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755/include --with-mpfr-lib=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755/lib --with-gmp-include=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272/include --with-gmp-lib=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272/lib --with-mpc-include=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2/include --with-mpc-lib=/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/lib64 -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42/lib' --with-boot-ldflags='-Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/lib64 -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-g5ubzpswttomxcjdgmbm34hvbxuam272/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.2.1-sznqkz45py5i7nt3e3c2cqht55m5xli2/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.2.0-6xdhgzjlsbprgacr7tjoicwhk65ci755/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.13-rw3jnfuybepnu23itkwlcpmllrj4v5ow/lib -Wl,-rpath,/nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.2-62gsc45ayskryzavc6w2ibfli63pih42/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Spack GCC) 
+==> Added 1 new compiler to /home/cnh/.spack/linux/compilers.yaml
+    gcc@12.2.0
+==> Compilers are defined in the following files:
+    /home/cnh/.spack/linux/compilers.yaml
+compilers:
+- compiler:
+    spec: gcc@8.5.0
+    paths:
+      cc: /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: null
+      fc: null
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@12.2.0
+    paths:
+      cc: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/bin/gcc
+      cxx: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/bin/g++
+      f77: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/bin/gfortran
+      fc: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-12.2.0-z73tnikfhc3f57obrsjilvvvewhvmxxk/bin/gfortran
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+Input spec
+--------------------------------
+ -   gcc@12.2.0 arch=linux-rocky8-zen3
+
+Concretized
+--------------------------------
+ -   gcc@12.2.0%gcc@12.2.0~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages=c,c++,fortran arch=linux-rocky8-zen3
+ -       ^diffutils@3.8%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^libiconv@1.17%gcc@12.2.0 build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+ -       ^gawk@5.1.1%gcc@12.2.0~nls build_system=autotools arch=linux-rocky8-zen3
+ -           ^libsigsegv@2.13%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^readline@8.2%gcc@12.2.0 build_system=autotools patches=bbf97f1 arch=linux-rocky8-zen3
+ -       ^gmp@6.2.1%gcc@12.2.0+cxx build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+ -           ^autoconf@2.69%gcc@12.2.0 build_system=autotools patches=35c4492,7793209,a49dd5b arch=linux-rocky8-zen3
+ -           ^automake@1.16.5%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^m4@1.4.19%gcc@12.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-rocky8-zen3
+ -       ^libtool@2.4.7%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -       ^mpc@1.2.1%gcc@12.2.0 build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+ -       ^mpfr@4.2.0%gcc@12.2.0 build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+ -           ^autoconf-archive@2022.02.11%gcc@12.2.0 build_system=autotools patches=139214f arch=linux-rocky8-zen3
+ -       ^texinfo@7.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^gettext@0.21.1%gcc@12.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-rocky8-zen3
+ -               ^bzip2@1.0.8%gcc@12.2.0~debug~pic+shared build_system=generic arch=linux-rocky8-zen3
+ -               ^libxml2@2.10.3%gcc@12.2.0~python build_system=autotools arch=linux-rocky8-zen3
+ -               ^tar@1.34%gcc@12.2.0 build_system=autotools zip=pigz arch=linux-rocky8-zen3
+ -                   ^pigz@2.7%gcc@12.2.0 build_system=makefile arch=linux-rocky8-zen3
+ -               ^xz@5.4.1%gcc@12.2.0~pic build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+ -           ^ncurses@6.4%gcc@12.2.0~symlinks+termlib abi=none build_system=autotools arch=linux-rocky8-zen3
+ -               ^pkgconf@1.8.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^perl@5.36.0%gcc@12.2.0+cpanm+open+shared+threads build_system=generic arch=linux-rocky8-zen3
+ -               ^berkeley-db@18.1.40%gcc@12.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-rocky8-zen3
+ -               ^gdbm@1.23%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -       ^zlib@1.2.13%gcc@12.2.0+optimize+pic+shared build_system=makefile arch=linux-rocky8-zen3
+ -       ^zstd@1.5.2%gcc@12.2.0+programs build_system=makefile compression=none libs=shared,static arch=linux-rocky8-zen3
+
+==> Installing libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc
+==> No binary for libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/8f/8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313.tar.gz
+==> No patches needed for libiconv
+==> libiconv: Executing phase: 'autoreconf'
+==> libiconv: Executing phase: 'configure'
+==> libiconv: Executing phase: 'build'
+==> libiconv: Executing phase: 'install'
+==> libiconv: Successfully installed libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc
+  Stage: 0.16s.  Autoreconf: 0.00s.  Configure: 17.34s.  Build: 9.24s.  Install: 2.85s.  Total: 29.81s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc
+==> Installing libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455
+==> No binary for libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/be/be78ee4176b05f7c75ff03298d84874db90f4b6c9d5503f0da1226b3a3c48119.tar.gz
+==> No patches needed for libsigsegv
+==> libsigsegv: Executing phase: 'autoreconf'
+==> libsigsegv: Executing phase: 'configure'
+==> libsigsegv: Executing phase: 'build'
+==> libsigsegv: Executing phase: 'install'
+==> libsigsegv: Successfully installed libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455
+  Stage: 0.06s.  Autoreconf: 0.00s.  Configure: 6.01s.  Build: 0.67s.  Install: 0.19s.  Total: 7.06s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455
+==> Installing berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4
+==> No binary for berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/0c/0cecb2ef0c67b166de93732769abdeba0555086d51de1090df325e18ee8da9c8.tar.gz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/berkeley-db/drop-docs.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/berkeley-db/tls.patch
+==> Ran patch() for berkeley-db
+==> berkeley-db: Executing phase: 'autoreconf'
+==> berkeley-db: Executing phase: 'configure'
+==> berkeley-db: Executing phase: 'build'
+==> berkeley-db: Executing phase: 'install'
+==> berkeley-db: Successfully installed berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4
+  Stage: 0.74s.  Autoreconf: 0.00s.  Configure: 17.20s.  Build: 6.83s.  Install: 0.60s.  Total: 25.52s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4
+==> Installing pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw
+==> No binary for pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/ef/ef9c7e61822b7cb8356e6e9e1dca58d9556f3200d78acab35e4347e9d4c2bbaf.tar.xz
+==> No patches needed for pkgconf
+==> pkgconf: Executing phase: 'autoreconf'
+==> pkgconf: Executing phase: 'configure'
+==> pkgconf: Executing phase: 'build'
+==> pkgconf: Executing phase: 'install'
+==> pkgconf: Successfully installed pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw
+  Stage: 0.04s.  Autoreconf: 0.00s.  Configure: 2.76s.  Build: 1.21s.  Install: 0.22s.  Total: 4.33s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw
+==> Installing zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65
+==> No binary for zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/b3/b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30.tar.gz
+==> No patches needed for zlib
+==> zlib: Executing phase: 'edit'
+==> zlib: Executing phase: 'build'
+==> zlib: Executing phase: 'install'
+==> zlib: Successfully installed zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65
+  Stage: 0.06s.  Edit: 0.45s.  Build: 0.57s.  Install: 0.11s.  Total: 1.26s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65
+==> Installing autoconf-archive-2022.02.11-3356rxirmcad5jfmcjpoomjlzvmnpygm
+==> No binary for autoconf-archive-2022.02.11-3356rxirmcad5jfmcjpoomjlzvmnpygm found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/78/78a61b611e2eeb55a89e0398e0ce387bcaf57fe2dd53c6fe427130f777ad1e8c.tar.xz
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/13/139214f5104f699f868dc87a14378e1e694a3c2539efa0de6f878024f3d7c66d
+==> Applied patch https://github.com/autoconf-archive/autoconf-archive/commit/510672bc200e869fb0ad4634407561be819cf093.patch?full_index=1
+==> autoconf-archive: Executing phase: 'autoreconf'
+==> autoconf-archive: Executing phase: 'configure'
+==> autoconf-archive: Executing phase: 'build'
+==> autoconf-archive: Executing phase: 'install'
+==> autoconf-archive: Successfully installed autoconf-archive-2022.02.11-3356rxirmcad5jfmcjpoomjlzvmnpygm
+  Stage: 0.09s.  Autoreconf: 0.00s.  Configure: 1.27s.  Build: 0.03s.  Install: 3.08s.  Total: 4.59s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/autoconf-archive-2022.02.11-3356rxirmcad5jfmcjpoomjlzvmnpygm
+==> Installing xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww
+==> No binary for xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/dd/dd172acb53867a68012f94c17389401b2f274a1aa5ae8f84cbfb8b7e383ea8d3.tar.bz2
+==> No patches needed for xz
+==> xz: Executing phase: 'autoreconf'
+==> xz: Executing phase: 'configure'
+==> xz: Executing phase: 'build'
+==> xz: Executing phase: 'install'
+==> xz: Successfully installed xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww
+  Stage: 0.27s.  Autoreconf: 0.00s.  Configure: 8.46s.  Build: 3.83s.  Install: 3.55s.  Total: 16.31s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww
+==> Installing zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s
+==> No binary for zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/f7/f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e.tar.gz
+==> No patches needed for zstd
+==> zstd: Executing phase: 'edit'
+==> zstd: Executing phase: 'build'
+==> zstd: Executing phase: 'install'
+==> zstd: Successfully installed zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s
+  Stage: 0.07s.  Edit: 0.00s.  Build: 0.00s.  Install: 14.70s.  Total: 14.88s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s
+==> Installing diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh
+==> No binary for diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/a6/a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec.tar.xz
+==> No patches needed for diffutils
+==> diffutils: Executing phase: 'autoreconf'
+==> diffutils: Executing phase: 'configure'
+==> diffutils: Executing phase: 'build'
+==> diffutils: Executing phase: 'install'
+==> diffutils: Successfully installed diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh
+  Stage: 0.14s.  Autoreconf: 0.00s.  Configure: 31.97s.  Build: 3.20s.  Install: 1.22s.  Total: 36.72s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh
+==> Installing ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp
+==> No binary for ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/69/6931283d9ac87c5073f30b6290c4c75f21632bb4fc3603ac8100812bed248159.tar.gz
+==> No patches needed for ncurses
+==> ncurses: Executing phase: 'autoreconf'
+==> ncurses: Executing phase: 'configure'
+==> ncurses: Executing phase: 'build'
+==> ncurses: Executing phase: 'install'
+==> ncurses: Successfully installed ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp
+  Stage: 0.15s.  Autoreconf: 0.00s.  Configure: 35.92s.  Build: 19.65s.  Install: 43.27s.  Total: 1m 39.30s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp
+==> Installing pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid
+==> No binary for pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/d2/d2045087dae5e9482158f1f1c0f21c7d3de6f7cdc7cc5848bdabda544e69aa58.tar.gz
+==> No patches needed for pigz
+==> pigz: Executing phase: 'edit'
+==> pigz: Executing phase: 'build'
+==> pigz: Executing phase: 'install'
+==> pigz: Successfully installed pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid
+  Stage: 0.05s.  Edit: 0.00s.  Build: 1.56s.  Install: 0.04s.  Total: 1.84s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid
+==> Installing libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana
+==> No binary for libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/5d/5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c.tar.xz
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/96/96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7.tar.gz
+==> Moving resource stage
+	source: /tmp/cnh/spack-stage/resource-xmlts-2sj6k3hdrxop7a66rforsnr3riyknana/spack-src/
+	destination: /tmp/cnh/spack-stage/spack-stage-libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana/spack-src/xmlconf
+==> Ran patch() for libxml2
+==> libxml2: Executing phase: 'autoreconf'
+==> libxml2: Executing phase: 'configure'
+==> libxml2: Executing phase: 'build'
+==> libxml2: Executing phase: 'install'
+==> libxml2: Successfully installed libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana
+  Stage: 0.75s.  Autoreconf: 0.00s.  Configure: 6.72s.  Build: 5.90s.  Install: 1.88s.  Total: 15.65s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana
+==> Installing bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4
+==> No binary for bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/ab/ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269.tar.gz
+==> Ran patch() for bzip2
+==> bzip2: Executing phase: 'install'
+==> bzip2: Successfully installed bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4
+  Stage: 0.07s.  Install: 2.41s.  Total: 2.68s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4
+==> Installing m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx
+==> No binary for m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/3b/3be4a26d825ffdfda52a56fc43246456989a3630093cced3fbddf4771ee58a70.tar.gz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/m4/checks-198.sysval.1.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/m4/checks-198.sysval.2.patch
+==> Ran patch() for m4
+==> m4: Executing phase: 'autoreconf'
+==> m4: Executing phase: 'configure'
+==> m4: Executing phase: 'build'
+==> m4: Executing phase: 'install'
+==> m4: Successfully installed m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx
+  Stage: 0.19s.  Autoreconf: 0.00s.  Configure: 36.82s.  Build: 3.92s.  Install: 0.82s.  Total: 42.01s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx
+==> Installing readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg
+==> No binary for readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/3f/3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35.tar.gz
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/bb/bbf97f1ec40a929edab5aa81998c1e2ef435436c597754916e6a5868f273aff7
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-001
+==> Ran patch() for readline
+==> readline: Executing phase: 'autoreconf'
+==> readline: Executing phase: 'configure'
+==> readline: Executing phase: 'build'
+==> readline: Executing phase: 'install'
+==> readline: Successfully installed readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg
+  Stage: 0.10s.  Autoreconf: 0.00s.  Configure: 5.77s.  Build: 1.30s.  Install: 0.36s.  Total: 7.68s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg
+==> Installing tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2
+==> No binary for tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/03/03d908cf5768cfe6b7ad588c921c6ed21acabfb2b79b788d1330453507647aed.tar.gz
+==> No patches needed for tar
+==> tar: Executing phase: 'autoreconf'
+==> tar: Executing phase: 'configure'
+==> tar: Executing phase: 'build'
+==> tar: Executing phase: 'install'
+==> tar: Successfully installed tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2
+  Stage: 0.14s.  Autoreconf: 0.00s.  Configure: 39.25s.  Build: 4.79s.  Install: 2.50s.  Total: 47.34s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2
+==> Installing libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs
+==> No binary for libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/04/04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8.tar.gz
+==> Ran patch() for libtool
+==> libtool: Executing phase: 'autoreconf'
+==> libtool: Executing phase: 'configure'
+==> libtool: Executing phase: 'build'
+==> libtool: Executing phase: 'install'
+==> libtool: Successfully installed libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs
+  Stage: 0.09s.  Autoreconf: 0.00s.  Configure: 8.24s.  Build: 1.19s.  Install: 0.87s.  Total: 10.62s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs
+==> Installing gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd
+==> No binary for gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/74/74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd.tar.gz
+==> No patches needed for gdbm
+==> gdbm: Executing phase: 'autoreconf'
+==> gdbm: Executing phase: 'configure'
+==> gdbm: Executing phase: 'build'
+==> gdbm: Executing phase: 'install'
+==> gdbm: Successfully installed gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd
+  Stage: 0.07s.  Autoreconf: 0.00s.  Configure: 6.27s.  Build: 2.18s.  Install: 1.63s.  Total: 10.64s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd
+==> Installing gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3
+==> No binary for gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/50/50dbc8f39797950aa2c98e939947c527e5ac9ebd2c1b99dd7b06ba33a6767ae6.tar.xz
+==> No patches needed for gettext
+==> gettext: Executing phase: 'autoreconf'
+==> gettext: Executing phase: 'configure'
+==> gettext: Executing phase: 'build'
+==> gettext: Executing phase: 'install'
+==> gettext: Successfully installed gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3
+  Stage: 0.62s.  Autoreconf: 0.00s.  Configure: 1m 53.49s.  Build: 1m 49.18s.  Install: 1m 19.80s.  Total: 5m 4.24s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3
+==> Installing perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy
+==> No binary for perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/e2/e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a.tar.gz
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/9d/9da50e155df72bce55cb69f51f1dbb4b62d23740fb99f6178bb27f22ebdf8a46.tar.gz
+==> Moving resource stage
+	source: /tmp/cnh/spack-stage/resource-cpanm-4f3dhghce2hyg6s6onjngst64y4y3loy/spack-src/
+	destination: /tmp/cnh/spack-stage/spack-stage-perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy/spack-src/cpanm/cpanm
+==> Ran patch() for perl
+==> perl: Executing phase: 'configure'
+==> perl: Executing phase: 'build'
+==> perl: Executing phase: 'install'
+==> perl: Successfully installed perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy
+  Stage: 0.62s.  Configure: 1m 14.64s.  Build: 27.86s.  Install: 38.81s.  Total: 2m 22.54s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy
+==> Installing texinfo-7.0-l4esxgg6467aoplcv7nbpyl633zre45g
+==> No binary for texinfo-7.0-l4esxgg6467aoplcv7nbpyl633zre45g found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/92/9261d4ee11cdf6b61895e213ffcd6b746a61a64fe38b9741a3aaa73125b35170.tar.gz
+==> No patches needed for texinfo
+==> texinfo: Executing phase: 'autoreconf'
+==> texinfo: Executing phase: 'configure'
+==> texinfo: Executing phase: 'build'
+==> texinfo: Executing phase: 'install'
+==> texinfo: Successfully installed texinfo-7.0-l4esxgg6467aoplcv7nbpyl633zre45g
+  Stage: 0.42s.  Autoreconf: 0.00s.  Configure: 27.86s.  Build: 4.21s.  Install: 2.16s.  Total: 34.94s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/texinfo-7.0-l4esxgg6467aoplcv7nbpyl633zre45g
+==> Installing autoconf-2.69-gs3ygqbtwmjtxybqvhekfi5bfslcnpn3
+==> No binary for autoconf-2.69-gs3ygqbtwmjtxybqvhekfi5bfslcnpn3 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/95/954bd69b391edc12d6a4a51a2dd1476543da5c6bbf05a95b59dc0dd6fd4c2969.tar.gz
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/77/7793209b33013dc0f81208718c68440c5aae80e7a1c4b8d336e382525af791a7
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/35/35c449281546376449766f92d49fc121ca50e330e60fefcfc9be2af3253082c2
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/a4/a49dd5bac3b62daa0ff688ab4d508d71dbd2f4f8d7e2a02321926346161bf3ee
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-fix-libtool-test.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26-2.patch
+==> Ran patch() for autoconf
+==> autoconf: Executing phase: 'autoreconf'
+==> autoconf: Executing phase: 'configure'
+==> autoconf: Executing phase: 'build'
+==> autoconf: Executing phase: 'install'
+==> autoconf: Successfully installed autoconf-2.69-gs3ygqbtwmjtxybqvhekfi5bfslcnpn3
+  Stage: 0.13s.  Autoreconf: 0.00s.  Configure: 1.40s.  Build: 0.77s.  Install: 0.42s.  Total: 3.30s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/autoconf-2.69-gs3ygqbtwmjtxybqvhekfi5bfslcnpn3
+==> Installing automake-1.16.5-go6am7fvsnnbadh4iylvk5txwdid44d7
+==> No binary for automake-1.16.5-go6am7fvsnnbadh4iylvk5txwdid44d7 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/07/07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605.tar.gz
+==> Ran patch() for automake
+==> automake: Executing phase: 'autoreconf'
+==> automake: Executing phase: 'configure'
+==> automake: Executing phase: 'build'
+==> automake: Executing phase: 'install'
+==> automake: Successfully installed automake-1.16.5-go6am7fvsnnbadh4iylvk5txwdid44d7
+  Stage: 0.10s.  Autoreconf: 0.00s.  Configure: 2.61s.  Build: 0.35s.  Install: 0.24s.  Total: 3.59s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/automake-1.16.5-go6am7fvsnnbadh4iylvk5txwdid44d7
+==> Installing gmp-6.2.1-lgvsi53ce6t5eld5hp6lmlsdagbv7ono
+==> No binary for gmp-6.2.1-lgvsi53ce6t5eld5hp6lmlsdagbv7ono found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/ea/eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c.tar.bz2
+==> No patches needed for gmp
+==> gmp: Executing phase: 'autoreconf'
+==> gmp: Executing phase: 'configure'
+==> gmp: Executing phase: 'build'
+==> gmp: Executing phase: 'install'
+==> gmp: Successfully installed gmp-6.2.1-lgvsi53ce6t5eld5hp6lmlsdagbv7ono
+  Stage: 0.40s.  Autoreconf: 5.63s.  Configure: 17.19s.  Build: 10.15s.  Install: 0.70s.  Total: 34.90s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gmp-6.2.1-lgvsi53ce6t5eld5hp6lmlsdagbv7ono
+==> Installing mpfr-4.2.0-zinogoo347bkkvclpheteof55ext5kxk
+==> No binary for mpfr-4.2.0-zinogoo347bkkvclpheteof55ext5kxk found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/69/691db39178e36fc460c046591e4b0f2a52c8f2b3ee6d750cc2eab25f1eaa999d.tar.bz2
+==> No patches needed for mpfr
+==> mpfr: Executing phase: 'autoreconf'
+==> mpfr: Executing phase: 'configure'
+==> mpfr: Executing phase: 'build'
+==> mpfr: Executing phase: 'install'
+==> mpfr: Successfully installed mpfr-4.2.0-zinogoo347bkkvclpheteof55ext5kxk
+  Stage: 0.26s.  Autoreconf: 14.27s.  Configure: 10.57s.  Build: 8.95s.  Install: 0.69s.  Total: 36.47s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/mpfr-4.2.0-zinogoo347bkkvclpheteof55ext5kxk
+==> Installing gawk-5.1.1-pfx6jkexgaqzrosdofbqiydrnitvjn2c
+==> No binary for gawk-5.1.1-pfx6jkexgaqzrosdofbqiydrnitvjn2c found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/d8/d87629386e894bbea11a5e00515fc909dc9b7249529dad9e6a3a2c77085f7ea2.tar.xz
+==> No patches needed for gawk
+==> gawk: Executing phase: 'autoreconf'
+==> gawk: Executing phase: 'configure'
+==> gawk: Executing phase: 'build'
+==> gawk: Executing phase: 'install'
+==> gawk: Successfully installed gawk-5.1.1-pfx6jkexgaqzrosdofbqiydrnitvjn2c
+  Stage: 0.23s.  Autoreconf: 0.00s.  Configure: 18.20s.  Build: 4.66s.  Install: 1.99s.  Total: 26.99s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gawk-5.1.1-pfx6jkexgaqzrosdofbqiydrnitvjn2c
+==> Installing mpc-1.2.1-b3mtfbdjvl4x33rkvj3k24utrxdbdrw4
+==> No binary for mpc-1.2.1-b3mtfbdjvl4x33rkvj3k24utrxdbdrw4 found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/17/17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459.tar.gz
+==> No patches needed for mpc
+==> mpc: Executing phase: 'autoreconf'
+==> mpc: Executing phase: 'configure'
+==> mpc: Executing phase: 'build'
+==> mpc: Executing phase: 'install'
+==> mpc: Successfully installed mpc-1.2.1-b3mtfbdjvl4x33rkvj3k24utrxdbdrw4
+  Stage: 0.06s.  Autoreconf: 0.00s.  Configure: 5.96s.  Build: 1.75s.  Install: 0.44s.  Total: 10.04s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/mpc-1.2.1-b3mtfbdjvl4x33rkvj3k24utrxdbdrw4
+==> Installing gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co
+==> No binary for gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co found: installing from source
+==> Using cached archive: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/cache/_source-cache/archive/e5/e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff.tar.xz
+==> Ran patch() for gcc
+==> gcc: Executing phase: 'autoreconf'
+==> gcc: Executing phase: 'configure'
+==> gcc: Executing phase: 'build'
+==> gcc: Executing phase: 'install'
+==> gcc: Successfully installed gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co
+  Stage: 5.88s.  Autoreconf: 0.00s.  Configure: 3.74s.  Build: 15m 0.27s.  Install: 20.29s.  Total: 15m 32.93s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co
+==> Regenerating lmod module files
+==> Added 2 new compilers to /home/cnh/.spack/linux/compilers.yaml
+    gcc@12.2.0
+    gcc@8.5.0
+==> Compilers are defined in the following files:
+    /home/cnh/.spack/linux/compilers.yaml
+compilers:
+- compiler:
+    spec: gcc@12.2.0
+    paths:
+      cc: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co/bin/gcc
+      cxx: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co/bin/g++
+      f77: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co/bin/gfortran
+      fc: /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gcc-12.2.0-2tpsvvm6o34jdk5n3xmkh5xxhy2tg5co/bin/gfortran
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@8.5.0
+    paths:
+      cc: /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: null
+      fc: null
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+Input spec
+--------------------------------
+ -   mvapich2@2.3.7%gcc@12.2.0
+
+Concretized
+--------------------------------
+ -   mvapich2@2.3.7%gcc@12.2.0~alloca~cuda~debug+regcache+wrapperrpath build_system=autotools ch3_rank_bits=32 fabrics=mrail file_systems=auto process_managers=auto threads=multiple arch=linux-rocky8-zen3
+ -       ^bison@3.8.2%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^diffutils@3.8%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^m4@1.4.19%gcc@12.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-rocky8-zen3
+[+]              ^libsigsegv@2.13%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^perl@5.36.0%gcc@12.2.0+cpanm+open+shared+threads build_system=generic arch=linux-rocky8-zen3
+[+]              ^berkeley-db@18.1.40%gcc@12.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-rocky8-zen3
+[+]              ^bzip2@1.0.8%gcc@12.2.0~debug~pic+shared build_system=generic arch=linux-rocky8-zen3
+[+]              ^gdbm@1.23%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                  ^readline@8.2%gcc@12.2.0 build_system=autotools patches=bbf97f1 arch=linux-rocky8-zen3
+ -       ^findutils@4.9.0%gcc@12.2.0 build_system=autotools patches=440b954 arch=linux-rocky8-zen3
+ -       ^libpciaccess@0.16%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^libtool@2.4.7%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -           ^util-macros@1.19.3%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]      ^libxml2@2.10.3%gcc@12.2.0~python build_system=autotools arch=linux-rocky8-zen3
+[+]          ^libiconv@1.17%gcc@12.2.0 build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+[+]          ^xz@5.4.1%gcc@12.2.0~pic build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+[+]      ^pkgconf@1.8.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -       ^rdma-core@41.0%gcc@12.2.0~ipo+static build_system=cmake build_type=RelWithDebInfo arch=linux-rocky8-zen3
+ -           ^cmake@3.25.2%gcc@12.2.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-rocky8-zen3
+[+]              ^ncurses@6.4%gcc@12.2.0~symlinks+termlib abi=none build_system=autotools arch=linux-rocky8-zen3
+ -               ^openssl@1.1.1t%gcc@12.2.0~docs~shared build_system=generic certs=mozilla arch=linux-rocky8-zen3
+ -                   ^ca-certificates-mozilla@2023-01-10%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+ -           ^libnl@3.3.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -               ^flex@2.6.3%gcc@12.2.0+lex~nls build_system=autotools arch=linux-rocky8-zen3
+ -           ^py-docutils@0.19%gcc@12.2.0 build_system=python_pip arch=linux-rocky8-zen3
+ -               ^py-pip@23.0%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+ -               ^py-setuptools@65.5.0%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+ -               ^py-wheel@0.37.1%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+ -               ^python@3.10.8%gcc@12.2.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-rocky8-zen3
+ -                   ^expat@2.5.0%gcc@12.2.0+libbsd build_system=autotools arch=linux-rocky8-zen3
+ -                       ^libbsd@0.11.7%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -                           ^libmd@1.0.4%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                  ^gettext@0.21.1%gcc@12.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^tar@1.34%gcc@12.2.0 build_system=autotools zip=pigz arch=linux-rocky8-zen3
+[+]                          ^pigz@2.7%gcc@12.2.0 build_system=makefile arch=linux-rocky8-zen3
+[+]                          ^zstd@1.5.2%gcc@12.2.0+programs build_system=makefile compression=none libs=shared,static arch=linux-rocky8-zen3
+ -                   ^libffi@3.4.4%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+ -                   ^libxcrypt@4.4.33%gcc@12.2.0~obsolete_api build_system=autotools arch=linux-rocky8-zen3
+ -                   ^sqlite@3.40.1%gcc@12.2.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-rocky8-zen3
+ -                   ^util-linux-uuid@2.38.1%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]      ^zlib@1.2.13%gcc@12.2.0+optimize+pic+shared build_system=makefile arch=linux-rocky8-zen3
+
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65
+==> Installing findutils-4.9.0-yjz33makim4kao4jacpe4kwntofopuie
+==> No binary for findutils-4.9.0-yjz33makim4kao4jacpe4kwntofopuie found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a2/a2bfb8c09d436770edc59f50fa483e785b161a3b7b9d547573cb08065fd462fe.tar.xz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/findutils/nonnull.patch
+==> findutils: Executing phase: 'autoreconf'
+==> findutils: Executing phase: 'configure'
+==> findutils: Executing phase: 'build'
+==> findutils: Executing phase: 'install'
+==> findutils: Successfully installed findutils-4.9.0-yjz33makim4kao4jacpe4kwntofopuie
+  Stage: 0.36s.  Autoreconf: 0.00s.  Configure: 44.97s.  Build: 4.50s.  Install: 2.21s.  Total: 52.27s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/findutils-4.9.0-yjz33makim4kao4jacpe4kwntofopuie
+==> Installing util-macros-1.19.3-zavmduxcw7ji3nrplxr53fbqin2e3ejx
+==> No binary for util-macros-1.19.3-zavmduxcw7ji3nrplxr53fbqin2e3ejx found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0f/0f812e6e9d2786ba8f54b960ee563c0663ddbe2434bf24ff193f5feab1f31971.tar.bz2
+==> No patches needed for util-macros
+==> util-macros: Executing phase: 'autoreconf'
+==> util-macros: Executing phase: 'configure'
+==> util-macros: Executing phase: 'build'
+==> util-macros: Executing phase: 'install'
+==> util-macros: Successfully installed util-macros-1.19.3-zavmduxcw7ji3nrplxr53fbqin2e3ejx
+  Stage: 0.19s.  Autoreconf: 0.00s.  Configure: 1.20s.  Build: 0.03s.  Install: 0.11s.  Total: 1.73s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/util-macros-1.19.3-zavmduxcw7ji3nrplxr53fbqin2e3ejx
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww
+==> Installing ca-certificates-mozilla-2023-01-10-kgozs52bwm2ensunoppfg4assnwhzg3f
+==> No binary for ca-certificates-mozilla-2023-01-10-kgozs52bwm2ensunoppfg4assnwhzg3f found: installing from source
+==> Fetching https://curl.se/ca/cacert-2023-01-10.pem
+==> No patches needed for ca-certificates-mozilla
+==> ca-certificates-mozilla: Executing phase: 'install'
+==> ca-certificates-mozilla: Successfully installed ca-certificates-mozilla-2023-01-10-kgozs52bwm2ensunoppfg4assnwhzg3f
+  Stage: 2.29s.  Install: 0.02s.  Total: 2.43s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/ca-certificates-mozilla-2023-01-10-kgozs52bwm2ensunoppfg4assnwhzg3f
+==> Installing libmd-1.0.4-45474yoy322cnqkcgg4zxh2ly47fhczq
+==> No binary for libmd-1.0.4-45474yoy322cnqkcgg4zxh2ly47fhczq found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f5/f51c921042e34beddeded4b75557656559cf5b1f2448033b4c1eec11c07e530f.tar.xz
+==> No patches needed for libmd
+==> libmd: Executing phase: 'autoreconf'
+==> libmd: Executing phase: 'configure'
+==> libmd: Executing phase: 'build'
+==> libmd: Executing phase: 'install'
+==> libmd: Successfully installed libmd-1.0.4-45474yoy322cnqkcgg4zxh2ly47fhczq
+  Stage: 0.47s.  Autoreconf: 0.00s.  Configure: 5.22s.  Build: 0.65s.  Install: 0.66s.  Total: 7.24s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libmd-1.0.4-45474yoy322cnqkcgg4zxh2ly47fhczq
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s
+==> Installing libffi-3.4.4-qa3ofzvwrapq5pxr5dlnea4v75fiojnp
+==> No binary for libffi-3.4.4-qa3ofzvwrapq5pxr5dlnea4v75fiojnp found: installing from source
+==> Fetching https://github.com/libffi/libffi/releases/download/v3.4.4/libffi-3.4.4.tar.gz
+==> No patches needed for libffi
+==> libffi: Executing phase: 'autoreconf'
+==> libffi: Executing phase: 'configure'
+==> libffi: Executing phase: 'build'
+==> libffi: Executing phase: 'install'
+==> libffi: Successfully installed libffi-3.4.4-qa3ofzvwrapq5pxr5dlnea4v75fiojnp
+  Stage: 1.36s.  Autoreconf: 0.00s.  Configure: 7.01s.  Build: 1.34s.  Install: 0.61s.  Total: 10.61s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libffi-3.4.4-qa3ofzvwrapq5pxr5dlnea4v75fiojnp
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh
+==> Installing util-linux-uuid-2.38.1-uu4zwl4bgobnd7haw6msxfktpeakq664
+==> No binary for util-linux-uuid-2.38.1-uu4zwl4bgobnd7haw6msxfktpeakq664 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/08/0820eb8eea90408047e3715424bc6be771417047f683950fecb4bdd2e2cbbc6e.tar.gz
+==> No patches needed for util-linux-uuid
+==> util-linux-uuid: Executing phase: 'autoreconf'
+==> util-linux-uuid: Executing phase: 'configure'
+==> util-linux-uuid: Executing phase: 'build'
+==> util-linux-uuid: Executing phase: 'install'
+==> util-linux-uuid: Successfully installed util-linux-uuid-2.38.1-uu4zwl4bgobnd7haw6msxfktpeakq664
+  Stage: 0.78s.  Autoreconf: 0.00s.  Configure: 22.54s.  Build: 0.71s.  Install: 1.76s.  Total: 26.09s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/util-linux-uuid-2.38.1-uu4zwl4bgobnd7haw6msxfktpeakq664
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana
+==> Installing libbsd-0.11.7-p4tjq6sezdfq34cjwy3p7bcyamdq7x65
+==> No binary for libbsd-0.11.7-p4tjq6sezdfq34cjwy3p7bcyamdq7x65 found: installing from source
+==> Fetching https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz
+==> No patches needed for libbsd
+==> libbsd: Executing phase: 'autoreconf'
+==> libbsd: Executing phase: 'configure'
+==> libbsd: Executing phase: 'build'
+==> libbsd: Executing phase: 'install'
+==> libbsd: Successfully installed libbsd-0.11.7-p4tjq6sezdfq34cjwy3p7bcyamdq7x65
+  Stage: 1.82s.  Autoreconf: 0.00s.  Configure: 7.79s.  Build: 1.35s.  Install: 2.73s.  Total: 14.00s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libbsd-0.11.7-p4tjq6sezdfq34cjwy3p7bcyamdq7x65
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg
+==> Installing expat-2.5.0-ijpvypl67zua2dtontbqwharmvze53hq
+==> No binary for expat-2.5.0-ijpvypl67zua2dtontbqwharmvze53hq found: installing from source
+==> Fetching https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.bz2
+==> No patches needed for expat
+==> expat: Executing phase: 'autoreconf'
+==> expat: Executing phase: 'configure'
+==> expat: Executing phase: 'build'
+==> expat: Executing phase: 'install'
+==> expat: Successfully installed expat-2.5.0-ijpvypl67zua2dtontbqwharmvze53hq
+  Stage: 1.52s.  Autoreconf: 0.00s.  Configure: 6.24s.  Build: 4.62s.  Install: 0.48s.  Total: 13.19s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/expat-2.5.0-ijpvypl67zua2dtontbqwharmvze53hq
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2
+==> Installing sqlite-3.40.1-h3vkr7dnvvztihjwtyuhkfsexxwoj6xn
+==> No binary for sqlite-3.40.1-h3vkr7dnvvztihjwtyuhkfsexxwoj6xn found: installing from source
+==> Fetching https://www.sqlite.org/2022/sqlite-autoconf-3400100.tar.gz
+==> No patches needed for sqlite
+==> sqlite: Executing phase: 'autoreconf'
+==> sqlite: Executing phase: 'configure'
+==> sqlite: Executing phase: 'build'
+==> sqlite: Executing phase: 'install'
+==> sqlite: Successfully installed sqlite-3.40.1-h3vkr7dnvvztihjwtyuhkfsexxwoj6xn
+  Stage: 1.64s.  Autoreconf: 0.00s.  Configure: 5.32s.  Build: 1m 11.74s.  Install: 0.44s.  Total: 1m 19.58s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/sqlite-3.40.1-h3vkr7dnvvztihjwtyuhkfsexxwoj6xn
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd
+==> Installing libpciaccess-0.16-h3posjgugyce73wtoy4gx3xkrujvldxw
+==> No binary for libpciaccess-0.16-h3posjgugyce73wtoy4gx3xkrujvldxw found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/84/84413553994aef0070cf420050aa5c0a51b1956b404920e21b81e96db6a61a27.tar.gz
+==> No patches needed for libpciaccess
+==> libpciaccess: Executing phase: 'autoreconf'
+==> libpciaccess: Executing phase: 'configure'
+==> libpciaccess: Executing phase: 'build'
+==> libpciaccess: Executing phase: 'install'
+==> libpciaccess: Successfully installed libpciaccess-0.16-h3posjgugyce73wtoy4gx3xkrujvldxw
+  Stage: 0.21s.  Autoreconf: 0.00s.  Configure: 6.28s.  Build: 0.97s.  Install: 0.31s.  Total: 8.42s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libpciaccess-0.16-h3posjgugyce73wtoy4gx3xkrujvldxw
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy
+==> Installing bison-3.8.2-a4aupolrbvyq5ndq7kghsgdctsujubd4
+==> No binary for bison-3.8.2-a4aupolrbvyq5ndq7kghsgdctsujubd4 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/06/06c9e13bdf7eb24d4ceb6b59205a4f67c2c7e7213119644430fe82fbd14a0abb.tar.gz
+==> No patches needed for bison
+==> bison: Executing phase: 'autoreconf'
+==> bison: Executing phase: 'configure'
+==> bison: Executing phase: 'build'
+==> bison: Executing phase: 'install'
+==> bison: Successfully installed bison-3.8.2-a4aupolrbvyq5ndq7kghsgdctsujubd4
+  Stage: 0.44s.  Autoreconf: 0.00s.  Configure: 29.21s.  Build: 1.80s.  Install: 3.88s.  Total: 36.04s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/bison-3.8.2-a4aupolrbvyq5ndq7kghsgdctsujubd4
+==> Installing openssl-1.1.1t-yoowsoozvhpfdkn5zv7sg7skbqykff3g
+==> No binary for openssl-1.1.1t-yoowsoozvhpfdkn5zv7sg7skbqykff3g found: installing from source
+==> Fetching http://www.openssl.org/source/openssl-1.1.1t.tar.gz
+==> Ran patch() for openssl
+==> openssl: Executing phase: 'install'
+==> openssl: Successfully installed openssl-1.1.1t-yoowsoozvhpfdkn5zv7sg7skbqykff3g
+  Stage: 2.22s.  Install: 16.86s.  Total: 19.70s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/openssl-1.1.1t-yoowsoozvhpfdkn5zv7sg7skbqykff3g
+==> Installing libxcrypt-4.4.33-alsuuxfamuo4hezjk2butpecj3agg57g
+==> No binary for libxcrypt-4.4.33-alsuuxfamuo4hezjk2butpecj3agg57g found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e8/e87acf9c652c573a4713d5582159f98f305d56ed5f754ce64f57d4194d6b3a6f.tar.xz
+==> No patches needed for libxcrypt
+==> libxcrypt: Executing phase: 'autoreconf'
+==> libxcrypt: Executing phase: 'configure'
+==> libxcrypt: Executing phase: 'build'
+==> libxcrypt: Executing phase: 'install'
+==> libxcrypt: Successfully installed libxcrypt-4.4.33-alsuuxfamuo4hezjk2butpecj3agg57g
+  Stage: 0.29s.  Autoreconf: 0.00s.  Configure: 6.95s.  Build: 1.93s.  Install: 0.28s.  Total: 10.07s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libxcrypt-4.4.33-alsuuxfamuo4hezjk2butpecj3agg57g
+==> Installing flex-2.6.3-iwnhh65jb2ptxw3eq4aotsa3qxvahinz
+==> No binary for flex-2.6.3-iwnhh65jb2ptxw3eq4aotsa3qxvahinz found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/68/68b2742233e747c462f781462a2a1e299dc6207401dac8f0bbb316f48565c2aa.tar.gz
+==> No patches needed for flex
+==> flex: Executing phase: 'autoreconf'
+==> flex: Executing phase: 'configure'
+==> flex: Executing phase: 'build'
+==> flex: Executing phase: 'install'
+==> flex: Successfully installed flex-2.6.3-iwnhh65jb2ptxw3eq4aotsa3qxvahinz
+  Stage: 0.59s.  Autoreconf: 0.00s.  Configure: 7.96s.  Build: 2.40s.  Install: 0.45s.  Total: 12.13s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/flex-2.6.3-iwnhh65jb2ptxw3eq4aotsa3qxvahinz
+==> Installing cmake-3.25.2-lg73z4gehrgkwvtcnghuf4hwc7b2yogq
+==> No binary for cmake-3.25.2-lg73z4gehrgkwvtcnghuf4hwc7b2yogq found: installing from source
+==> Fetching https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2.tar.gz
+==> No patches needed for cmake
+==> cmake: Executing phase: 'bootstrap'
+==> cmake: Executing phase: 'build'
+==> cmake: Executing phase: 'install'
+==> cmake: Successfully installed cmake-3.25.2-lg73z4gehrgkwvtcnghuf4hwc7b2yogq
+  Stage: 1.77s.  Bootstrap: 1m 43.47s.  Build: 1m 18.25s.  Install: 16.91s.  Total: 3m 21.21s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/cmake-3.25.2-lg73z4gehrgkwvtcnghuf4hwc7b2yogq
+==> Installing python-3.10.8-ia4f5kg6fwlhjv4qp7hbinqe4jdcsheg
+==> No binary for python-3.10.8-ia4f5kg6fwlhjv4qp7hbinqe4jdcsheg found: installing from source
+==> Fetching https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/python/python-3.7.4+-distutils-C++.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/python/python-3.7.4+-distutils-C++-testsuite.patch
+==> Applied patch /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/var/spack/repos/builtin/packages/python/tkinter-3.10.patch
+==> Ran patch() for python
+==> python: Executing phase: 'configure'
+==> python: Executing phase: 'build'
+==> python: Executing phase: 'install'
+==> python: Successfully installed python-3.10.8-ia4f5kg6fwlhjv4qp7hbinqe4jdcsheg
+  Stage: 1.87s.  Configure: 42.27s.  Build: 22.64s.  Install: 39.27s.  Total: 1m 47.67s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/python-3.10.8-ia4f5kg6fwlhjv4qp7hbinqe4jdcsheg
+==> Installing libnl-3.3.0-oocydhkznezsakdktiivdafwsymsaem7
+==> No binary for libnl-3.3.0-oocydhkznezsakdktiivdafwsymsaem7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/70/705468b5ae4cd1eb099d2d1c476d6a3abe519bc2810becf12fb1e32de1e074e4.tar.gz
+==> No patches needed for libnl
+==> libnl: Executing phase: 'autoreconf'
+==> libnl: Executing phase: 'configure'
+==> libnl: Executing phase: 'build'
+==> libnl: Executing phase: 'install'
+==> libnl: Successfully installed libnl-3.3.0-oocydhkznezsakdktiivdafwsymsaem7
+  Stage: 0.27s.  Autoreconf: 0.00s.  Configure: 2.92s.  Build: 5.76s.  Install: 3.14s.  Total: 12.89s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libnl-3.3.0-oocydhkznezsakdktiivdafwsymsaem7
+==> Installing py-pip-23.0-4i4bkbv334sza7hiik4yhqkukcfgm6vh
+==> No binary for py-pip-23.0-4i4bkbv334sza7hiik4yhqkukcfgm6vh found: installing from source
+==> Fetching https://files.pythonhosted.org/packages/py3/p/pip/pip-23.0-py3-none-any.whl
+==> No patches needed for py-pip
+==> py-pip: Executing phase: 'install'
+==> py-pip: Successfully installed py-pip-23.0-4i4bkbv334sza7hiik4yhqkukcfgm6vh
+  Stage: 1.09s.  Install: 12.57s.  Total: 15.15s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-pip-23.0-4i4bkbv334sza7hiik4yhqkukcfgm6vh
+==> Installing py-setuptools-65.5.0-2uxhpxi3dv3k72podwnvjyjvzo5fmq22
+==> No binary for py-setuptools-65.5.0-2uxhpxi3dv3k72podwnvjyjvzo5fmq22 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f6/f62ea9da9ed6289bfe868cd6845968a2c854d1427f8548d52cae02a42b4f0356
+==> No patches needed for py-setuptools
+==> py-setuptools: Executing phase: 'install'
+==> py-setuptools: Successfully installed py-setuptools-65.5.0-2uxhpxi3dv3k72podwnvjyjvzo5fmq22
+  Stage: 0.26s.  Install: 6.10s.  Total: 7.39s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-setuptools-65.5.0-2uxhpxi3dv3k72podwnvjyjvzo5fmq22
+==> Installing py-wheel-0.37.1-4b67vknnhbmhb7ijbqyc6r35islsr2t5
+==> No binary for py-wheel-0.37.1-4b67vknnhbmhb7ijbqyc6r35islsr2t5 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/4b/4bdcd7d840138086126cd09254dc6195fb4fc6f01c050a1d7236f2630db1d22a
+==> No patches needed for py-wheel
+==> py-wheel: Executing phase: 'install'
+==> py-wheel: Successfully installed py-wheel-0.37.1-4b67vknnhbmhb7ijbqyc6r35islsr2t5
+  Stage: 0.15s.  Install: 2.05s.  Total: 2.65s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-wheel-0.37.1-4b67vknnhbmhb7ijbqyc6r35islsr2t5
+==> Installing py-docutils-0.19-vryfg6243fyckbu7dyczplrngznvy5th
+==> No binary for py-docutils-0.19-vryfg6243fyckbu7dyczplrngznvy5th found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/33/33995a6753c30b7f577febfc2c50411fec6aac7f7ffeb7c4cfe5991072dcf9e6.tar.gz
+==> No patches needed for py-docutils
+==> py-docutils: Executing phase: 'install'
+==> py-docutils: Successfully installed py-docutils-0.19-vryfg6243fyckbu7dyczplrngznvy5th
+  Stage: 0.32s.  Install: 3.30s.  Total: 3.90s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-docutils-0.19-vryfg6243fyckbu7dyczplrngznvy5th
+==> Installing rdma-core-41.0-k2znogw2bqggzb5aua474mp36v2axjiv
+==> No binary for rdma-core-41.0-k2znogw2bqggzb5aua474mp36v2axjiv found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e0/e0b7deb8a71f229796a0cfe0fa25192c530cd3d86b755b6b28d1a5986a77507b.tar.gz
+==> No patches needed for rdma-core
+==> rdma-core: Executing phase: 'cmake'
+==> rdma-core: Executing phase: 'build'
+==> rdma-core: Executing phase: 'install'
+==> rdma-core: Successfully installed rdma-core-41.0-k2znogw2bqggzb5aua474mp36v2axjiv
+  Stage: 0.36s.  Cmake: 10.60s.  Build: 6.94s.  Install: 3.23s.  Total: 22.36s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/rdma-core-41.0-k2znogw2bqggzb5aua474mp36v2axjiv
+==> Installing mvapich2-2.3.7-d26zgiv3ypstzcfg7rve5lpi6q6fvcau
+==> No binary for mvapich2-2.3.7-d26zgiv3ypstzcfg7rve5lpi6q6fvcau found: installing from source
+==> Fetching https://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich2-2.3.7.tar.gz
+==> No patches needed for mvapich2
+==> mvapich2: Executing phase: 'autoreconf'
+==> mvapich2: Executing phase: 'configure'
+==> mvapich2: Executing phase: 'build'
+==> mvapich2: Executing phase: 'install'
+==> mvapich2: Successfully installed mvapich2-2.3.7-d26zgiv3ypstzcfg7rve5lpi6q6fvcau
+  Stage: 2.19s.  Autoreconf: 0.00s.  Configure: 2m 10.27s.  Build: 10m 36.21s.  Install: 25.97s.  Total: 13m 18.39s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/mvapich2-2.3.7-d26zgiv3ypstzcfg7rve5lpi6q6fvcau
+==> Regenerating lmod module files
+Input spec
+--------------------------------
+ -   osu-micro-benchmarks%gcc@12.2.0
+ -       ^mvapich2@2.3.7
+
+Concretized
+--------------------------------
+ -   osu-micro-benchmarks@7.0.1%gcc@12.2.0~cuda~graphing~papi~rocm build_system=autotools arch=linux-rocky8-zen3
+[+]      ^mvapich2@2.3.7%gcc@12.2.0~alloca~cuda~debug+regcache+wrapperrpath build_system=autotools ch3_rank_bits=32 fabrics=mrail file_systems=auto process_managers=auto threads=multiple arch=linux-rocky8-zen3
+[+]          ^bison@3.8.2%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]              ^diffutils@3.8%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]              ^m4@1.4.19%gcc@12.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-rocky8-zen3
+[+]                  ^libsigsegv@2.13%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]              ^perl@5.36.0%gcc@12.2.0+cpanm+open+shared+threads build_system=generic arch=linux-rocky8-zen3
+[+]                  ^berkeley-db@18.1.40%gcc@12.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-rocky8-zen3
+[+]                  ^bzip2@1.0.8%gcc@12.2.0~debug~pic+shared build_system=generic arch=linux-rocky8-zen3
+[+]                  ^gdbm@1.23%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^readline@8.2%gcc@12.2.0 build_system=autotools patches=bbf97f1 arch=linux-rocky8-zen3
+[+]          ^findutils@4.9.0%gcc@12.2.0 build_system=autotools patches=440b954 arch=linux-rocky8-zen3
+[+]          ^libpciaccess@0.16%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]              ^libtool@2.4.7%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]              ^util-macros@1.19.3%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^libxml2@2.10.3%gcc@12.2.0~python build_system=autotools arch=linux-rocky8-zen3
+[+]              ^libiconv@1.17%gcc@12.2.0 build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+[+]              ^xz@5.4.1%gcc@12.2.0~pic build_system=autotools libs=shared,static arch=linux-rocky8-zen3
+[+]          ^pkgconf@1.8.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^rdma-core@41.0%gcc@12.2.0~ipo+static build_system=cmake build_type=RelWithDebInfo arch=linux-rocky8-zen3
+[+]              ^cmake@3.25.2%gcc@12.2.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-rocky8-zen3
+[+]                  ^ncurses@6.4%gcc@12.2.0~symlinks+termlib abi=none build_system=autotools arch=linux-rocky8-zen3
+[+]                  ^openssl@1.1.1t%gcc@12.2.0~docs~shared build_system=generic certs=mozilla arch=linux-rocky8-zen3
+[+]                      ^ca-certificates-mozilla@2023-01-10%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+[+]              ^libnl@3.3.0%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                  ^flex@2.6.3%gcc@12.2.0+lex~nls build_system=autotools arch=linux-rocky8-zen3
+[+]              ^py-docutils@0.19%gcc@12.2.0 build_system=python_pip arch=linux-rocky8-zen3
+[+]                  ^py-pip@23.0%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+[+]                  ^py-setuptools@65.5.0%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+[+]                  ^py-wheel@0.37.1%gcc@12.2.0 build_system=generic arch=linux-rocky8-zen3
+[+]                  ^python@3.10.8%gcc@12.2.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-rocky8-zen3
+[+]                      ^expat@2.5.0%gcc@12.2.0+libbsd build_system=autotools arch=linux-rocky8-zen3
+[+]                          ^libbsd@0.11.7%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                              ^libmd@1.0.4%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^gettext@0.21.1%gcc@12.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-rocky8-zen3
+[+]                          ^tar@1.34%gcc@12.2.0 build_system=autotools zip=pigz arch=linux-rocky8-zen3
+[+]                              ^pigz@2.7%gcc@12.2.0 build_system=makefile arch=linux-rocky8-zen3
+[+]                              ^zstd@1.5.2%gcc@12.2.0+programs build_system=makefile compression=none libs=shared,static arch=linux-rocky8-zen3
+[+]                      ^libffi@3.4.4%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^libxcrypt@4.4.33%gcc@12.2.0~obsolete_api build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^sqlite@3.40.1%gcc@12.2.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-rocky8-zen3
+[+]                      ^util-linux-uuid@2.38.1%gcc@12.2.0 build_system=autotools arch=linux-rocky8-zen3
+[+]          ^zlib@1.2.13%gcc@12.2.0+optimize+pic+shared build_system=makefile arch=linux-rocky8-zen3
+
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libiconv-1.17-6qpivwqwd5vwa4j5n6umlkscu7o2ybhc
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libsigsegv-2.13-zxgljc2dn45f7xqrcqqm7sqvfh4ui455
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/berkeley-db-18.1.40-7qfu3p6idjxfxadkfiig7rjvvz3zjbh4
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pkgconf-1.8.0-qzo55zs2i3pynbmenyhq25fiwoy4gjaw
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zlib-1.2.13-6hj2xslw3xk2cqmrcxigqhsw4paaxk65
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/findutils-4.9.0-yjz33makim4kao4jacpe4kwntofopuie
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/util-macros-1.19.3-zavmduxcw7ji3nrplxr53fbqin2e3ejx
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/xz-5.4.1-zpausrjaswiaurj4v7rlazxk2bu2nwww
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/ca-certificates-mozilla-2023-01-10-kgozs52bwm2ensunoppfg4assnwhzg3f
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libmd-1.0.4-45474yoy322cnqkcgg4zxh2ly47fhczq
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/zstd-1.5.2-2xwr3wcdhnki7qgrpiffja7ehufl6l3s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libffi-3.4.4-qa3ofzvwrapq5pxr5dlnea4v75fiojnp
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/diffutils-3.8-btwoe6kno4peiqq32neb2hub5mbn26qh
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/ncurses-6.4-qpuml3tgl2dojx4qyoe3sq54s5zg6atp
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/util-linux-uuid-2.38.1-uu4zwl4bgobnd7haw6msxfktpeakq664
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/pigz-2.7-flfe5qzeq7zlu2lcstomos4l44e36pid
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libxml2-2.10.3-2sj6k3hdrxop7a66rforsnr3riyknana
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libbsd-0.11.7-p4tjq6sezdfq34cjwy3p7bcyamdq7x65
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/m4-1.4.19-astvlx6rnxpbwrgbbnzb7357mm3tlszx
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/bzip2-1.0.8-yrlppnptykt26prskq2dlor7ab5qqfb4
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/readline-8.2-lxmktyazahdpewtmndjbnph5jm6fvyhg
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/expat-2.5.0-ijpvypl67zua2dtontbqwharmvze53hq
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libtool-2.4.7-2jxqou2j5sfyaixnvhjp5xh3fk7zp6cs
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/tar-1.34-q35gb4gbklgsbmgdkomeehqwuadzv6w2
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gdbm-1.23-auee2nakr46cecxol4gl3l47dgffskjd
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/sqlite-3.40.1-h3vkr7dnvvztihjwtyuhkfsexxwoj6xn
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libpciaccess-0.16-h3posjgugyce73wtoy4gx3xkrujvldxw
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/gettext-0.21.1-bjrruzx53z53sq7hb4gnju2cohju2mx3
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/perl-5.36.0-4f3dhghce2hyg6s6onjngst64y4y3loy
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libxcrypt-4.4.33-alsuuxfamuo4hezjk2butpecj3agg57g
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/bison-3.8.2-a4aupolrbvyq5ndq7kghsgdctsujubd4
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/openssl-1.1.1t-yoowsoozvhpfdkn5zv7sg7skbqykff3g
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/flex-2.6.3-iwnhh65jb2ptxw3eq4aotsa3qxvahinz
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/cmake-3.25.2-lg73z4gehrgkwvtcnghuf4hwc7b2yogq
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/python-3.10.8-ia4f5kg6fwlhjv4qp7hbinqe4jdcsheg
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/libnl-3.3.0-oocydhkznezsakdktiivdafwsymsaem7
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-pip-23.0-4i4bkbv334sza7hiik4yhqkukcfgm6vh
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-setuptools-65.5.0-2uxhpxi3dv3k72podwnvjyjvzo5fmq22
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-wheel-0.37.1-4b67vknnhbmhb7ijbqyc6r35islsr2t5
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/py-docutils-0.19-vryfg6243fyckbu7dyczplrngznvy5th
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/rdma-core-41.0-k2znogw2bqggzb5aua474mp36v2axjiv
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/mvapich2-2.3.7-d26zgiv3ypstzcfg7rve5lpi6q6fvcau
+==> Installing osu-micro-benchmarks-7.0.1-ben4h4klwggwewyvpdxa57fgz5yo4lg2
+==> No binary for osu-micro-benchmarks-7.0.1-ben4h4klwggwewyvpdxa57fgz5yo4lg2 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/04/04954aea082ba1b90a461ffab82a3cee43fe2d5a60fed99f5cb4585ac7da8c66.tar.gz
+==> No patches needed for osu-micro-benchmarks
+==> osu-micro-benchmarks: Executing phase: 'autoreconf'
+==> osu-micro-benchmarks: Executing phase: 'configure'
+==> osu-micro-benchmarks: Executing phase: 'build'
+==> osu-micro-benchmarks: Executing phase: 'install'
+==> osu-micro-benchmarks: Successfully installed osu-micro-benchmarks-7.0.1-ben4h4klwggwewyvpdxa57fgz5yo4lg2
+  Stage: 0.32s.  Autoreconf: 0.00s.  Configure: 6.39s.  Build: 3.00s.  Install: 0.68s.  Total: 11.65s
+[+] /nfs/cnhlab001/cnh/projects/rocky8-spack/2023-03-03-b/spack-git/opt/spack/linux-rocky8-zen3/gcc-12.2.0/osu-micro-benchmarks-7.0.1-ben4h4klwggwewyvpdxa57fgz5yo4lg2
+==> Regenerating lmod module files
+node2101
+node2103
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+# OSU MPI Latency Test v7.0
+# Size          Latency (us)
+0                       1.73
+1                       1.75
+2                       1.75
+4                       1.76
+8                       1.75
+16                      1.79
+32                      1.79
+64                      1.86
+128                     1.97
+256                     2.82
+512                     2.89
+1024                    3.35
+2048                    4.29
+4096                    6.22
+8192                    9.78
+16384                  15.83
+32768                  26.24
+65536                  43.15
+131072                 66.67
+262144                118.75
+524288                 63.16
+1048576               115.57
+2097152               223.82
+4194304               346.79
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+# OSU MPI Bandwidth Test v7.0
+# Size      Bandwidth (MB/s)
+1                       3.97
+2                       7.89
+4                      15.75
+8                      31.19
+16                     60.91
+32                    116.25
+64                    250.87
+128                   475.70
+256                   785.37
+512                  1014.91
+1024                 1431.58
+2048                 1758.88
+4096                 1979.32
+8192                 5349.90
+16384                8735.82
+32768               10185.97
+65536               10358.09
+131072              10481.05
+262144              10556.53
+524288              10594.95
+1048576             10614.55
+2097152             10623.77
+4194304             10612.18
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[node2101:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+# OSU MPI Bi-Directional Bandwidth Test v7.0
+# Size      Bandwidth (MB/s)
+1                       4.78
+2                      10.16
+4                      19.83
+8                      45.04
+16                     83.98
+32                    169.90
+64                    425.30
+128                   672.07
+256                  1214.55
+512                  1513.98
+1024                 1957.89
+2048                 2324.11
+4096                 8207.76
+8192                 8588.93
+16384               10487.77
+32768               20475.08
+65536               21334.85
+131072              23933.73
+262144              24394.63
+524288              24513.17
+1048576             24575.62
+2097152             24611.29
+4194304             24627.54
