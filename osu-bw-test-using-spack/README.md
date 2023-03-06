@@ -25,6 +25,6 @@ The contents of this directory are as follows
           - runs the OSU benchmarks `osu_bw`, `osu_latency`, `osu_bibw` between two nodes
 
 
-2. `sample`
+2. `sample-output-for-build-from-clean.txt`
 
 3. `sample`
