@@ -83,6 +83,10 @@ spack spec -I mvapich2@2.3.7%gcc@12.2.0
 spack install mvapich2@2.3.7%gcc@12.2.0
 spack module lmod refresh -y
 
+# Add hwloc  (needed for OpenMPI )
+spack spec -I hwloc%gcc@12.2.0
+spack install hwloc%gcc@12.2.0
+
 # Build osu_mpi_benchmarks against just installed gcc and mvapich2
 spack spec -I osu-micro-benchmarks%gcc@12.2.0 ^mvapich2@2.3.7
 spack install osu-micro-benchmarks%gcc@12.2.0 ^mvapich2@2.3.7
