@@ -1,0 +1,99 @@
+packages:
+  pkgconf:
+    externals:
+    - spec: pkgconf@XXX  
+      prefix: /usr
+  gawk:
+    externals:
+    - spec: gawk@XXX    
+      prefix: /usr
+    buildable: false
+  diffutils:
+    externals:
+    - spec: diffutils@XXX    
+      prefix: /usr
+    buildable: false
+  bison:
+    externals:
+    - spec: bison@XXX    
+      prefix: /usr
+    buildable: false
+  m4:
+    externals:
+    - spec: m4@XXX    
+      prefix: /usr
+    buildable: false
+  openssl:
+    externals:
+    - spec: openssl@XXX    
+      prefix: /usr
+    buildable: false
+  libtool:
+    externals:
+    - spec: libtool@XXX    
+      prefix: /usr
+    buildable: false
+  automake:
+    externals:
+    - spec: automake@XXX    
+      prefix: /usr
+    buildable: false
+  autoconf:
+    externals:
+    - spec: autoconf@XXX    
+      prefix: /usr
+    buildable: false
+  texinfo:
+    externals:
+    - spec: texinfo@XXX    
+      prefix: /usr
+    buildable: false
+  cmake:
+    externals:
+    - spec: cmake@XXX    
+      prefix: /usr
+    buildable: false
+  gmake:
+    externals:
+    - spec: gmake@XXX    
+      prefix: /usr
+    buildable: false
+  gmp:
+    externals:
+    - spec: gmp@XXX    
+      prefix: /usr
+    buildable: false
+  zstd:
+    externals:
+    - spec: zstd@XXX    
+      prefix: /usr
+    buildable: false
+  mpfr:
+    externals:
+    - spec: mpfr@XXX    
+      prefix: /usr
+    buildable: false
+  zlib:
+    externals:
+    - spec: zlib@XXX    
+      prefix: /usr
+    buildable: false
+  mpc:
+    externals:
+    - spec: mpc@XXX    
+      prefix: /usr
+    buildable: false
+  numactl:
+    externals:
+    - spec: numactl@XXX    
+      prefix: /usr
+    buildable: false
+  rdma-core:
+    externals:
+    - spec: rdma-core@XXX    
+      prefix: /usr
+    buildable: false
+
+
+  gcc:
+    compiler: [gcc@8.5.0]
