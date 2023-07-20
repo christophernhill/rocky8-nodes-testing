@@ -4,7 +4,8 @@ The contents of this directory are as follows
 
 1. `test.slurm.sh`
    
-     * Script that can be run through Slurm requesting two nodes. 
+     * Script that can be run through Slurm requesting two nodes.
+     * 
      * The script has one configurable parameter `WDIR`. This must be set to a working directory for building and running software. 
      * When the script is run it will install needed software to run the OSU micro benchmarks that measure MPI meesage bandwidth and latency between two nodes.
      * After editing `WDIR` to a valid directory, visible on all nodes the script can be run using the command
